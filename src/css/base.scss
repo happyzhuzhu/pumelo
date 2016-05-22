@@ -1,0 +1,155 @@
+p,body,img,h1,h2,h3,ul,li,ol,form,th,td{
+	margin:0;
+	padding:0; font-family:"Microsoft YaHei";
+}
+a{ color:#333;text-decoration: none;}
+a:hover{ color:#333;}
+ul,li{
+	list-style: none;
+}
+img{ border: none;}
+.header{ background:#eee; overflow:hidden; height:80px;}
+.head-left{ float:left}
+.head-right{ float:right}
+.header-logo{}
+.recommend-list{ overflow:hidden; padding:20px 0;}   
+
+.area-zz{ width:1100px; margin:0 auto;}
+.recommend-wrapper{ padding:30px 0;}
+.load-tip{ text-align:center; color:#585858; font-size:14px; padding:30px 0;}
+.post-item{
+    width: 310px;
+    height: 346px;
+    border-radius: 6px;
+    border: solid #dedede thin;
+    float: left;
+    margin-bottom: 30px;
+    background: #fff;
+    margin-right: 22px;
+    -webkit-transition: all .5s ease 0s;
+    -moz-transition: all .5s ease 0s;
+    -o-transition: all .5s ease 0s;
+    .pitem {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%
+    }
+    .new-flag {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 57px;
+        height: 56px;
+        background: url(http://static.liwushuo.com/static/web/img/icon_tag_new_f721355.png);
+        background-size: 100% 100%
+    }
+    .pitem-cover {
+        height: 142px;
+        background-size: cover;
+        -ms-behavior: url(/static/web/css/web/style/css/com/htc/backgroundsize.min.htc);
+        behavior: url(/static/web/css/web/style/css/com/htc/backgroundsize.min.htc);
+        background-position: 50% 50%;
+        border-radius: 6px 6px 0 0
+    }
+    .pitem-title {
+        font-size: 18px;
+        padding: 15px;
+        color: #333;
+        line-height: 25px
+    }
+    .pitem-content {
+        font-size: 14px;
+        color: #888;
+        height: 80px;
+        padding: 15px;
+        padding-top: 0;
+        line-height: 21px
+    }
+    .pitem-info {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 15px
+    }
+    .info-item {
+        float: left;
+        height: 17px;
+        margin-right: 15px
+    }
+    .info-item i {
+        display: block;
+        width: 18px;
+        height: 17px;
+        float: left
+    }
+    .icon-like {
+    }
+    .icon-like.like {
+    }
+
+    .icon-like.active {
+    }
+
+    .icon-share {
+    }
+
+    .icon-comment {
+    }
+    .info-item span {
+        font-size: 14px;
+        line-height: 18px;
+        color: #333;
+        display: block;
+        padding: 0;
+        margin: -1px 0 0 24px
+    }
+    .pitem-event-cover {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0
+    }
+}
+.post-item:hover {
+    -webkit-transition: all .5s ease 0s;
+    -moz-transition: all .5s ease 0s;
+    -o-transition: all .5s ease 0s;
+    -moz-transform: translate(0px,-5px);
+    -webkit-transform: translate(0px,-5px);
+    -o-transform: translate(0px,-5px);
+    -ms-transform: translate(0px,-5px);
+    transform: translate(0px,-5px);
+    -webkit-box-shadow: 0 5px 10px rgba(67,72,84,.3);
+    -moz-box-shadow: 0 5px 10px rgba(67,72,84,.3);
+    -o-box-shadow: 0 5px 10px rgba(67,72,84,.3);
+    box-shadow: 0 5px 10px rgba(67,72,84,.3)
+}
+
+/*
+.zsp_cls,.zsp_pop,.zsp_con li{ background:url(http://p8.qhimg.com/t012250439002d81603.png) no-repeat;}
+.zsp_con ul,.zsp_btnKnow{ background:url(http://p9.qhimg.com/t01f0ac977b93dce36b.png)no-repeat;}
+.zsp_pop{ background-repeat:repeat-x; box-shadow:4px 4px 8px rgba(51,51,51,.5);
+	position:fixed; font-size:12px; width:450px; height:284px; overflow:hidden;  border:1px solid #898989; top:50%; left:50%; padding:0; z-index:99999; display:none; 
+	_position:absolute;
+_margin-top:0; background-color:#ebf3fc;}
+
+.zsp_pop *{ margin:0; padding:0;font-family: "Microsoft YaHei","simsun", Arial, Helvetica, sans-serif;}
+.zsp_cover{position:absolute; right:0px; top:0px; width:100%;background:#000; filter:alpha(opacity=30); -moz-opacity:0.30 ;opacity:0.30; z-index:99998; margin:0; padding:0; display:none;}
+.zsp_popt{ padding:1px 0 0 20px; height:53px; overflow:hidden;}
+.zsp_cls{ position:absolute; right:1px; top:0px; display:block; width:28px; height:25px;  background-position:0 -287px; zoom:1;}
+.zsp_cls:hover{ background-position:0 -313px;}
+.zsp_con{ height:284px; overflow:hidden;}
+.zsp_con h2{ height:36px; font-size:16px; font-weight:bold; color:#54a30d;  padding:14px 0 0 20px;}
+.zsp_con h3{font-size:15px; height:28px; padding:0 0 0 22px; font-weight:bold; color:#000; }
+.zsp_con ul{ height:44px; padding:0 0 114px 34px; background-position:34px 44px;}
+.zsp_con li{ list-style:none;padding:0 0 0 16px; margin:0; list-style:none; background-position:0px -356px; background-repeat:no-repeat; height:20px; line-height:20px; margin-bottom:2px; color:#363636;}
+.zsp_con h3 a{color:#0097ff;font-family:"simsun";}
+.zsp_ie_timer{line-height:18px;}
+#zsp_cls_counter{ font-style:normal;}
+.zsp_btnCon{ height:38px; line-height:38px; padding:0 16px 0 22px;}
+.zsp_btnCon a{ color:#0097ff; font-weight:900; margin-right:12px; font-family:"simsun";}
+
+
+*/
